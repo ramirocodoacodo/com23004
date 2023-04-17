@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: ejemplo;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            animation-iteration-count: infinite;
+        }
+        @keyframes ejemplo {
+            0% {background-color: red;top: 0px;left: 0px;}
+            25% {background-color:yellow;top: 0px;left: 100px;}
+            50% {background-color:green;top: 100px;left: 100px;}
+            75% {background-color:blue;top: 100px;left: 0px;}
+            100% {background-color:red;top: 0px;left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>

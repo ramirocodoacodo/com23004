@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav>Inicio | Contacto ...</nav>
+    </header>
+    <h1>Ejemplo de Form</h1>
+    <form action="" method="post">
+        <div>
+            <label for="fname">Nombre:</label>
+            <input id="fname" type="text" name="fname">
+        </div>
+        <div>
+            <label for="femail">Email:</label>
+            <input id="femail" name="femail" type="email" required>
+        </div>
+        <!-- botones de opción -->
+        <div>
+            <input type="radio" value="HTML" id="opt_html" name="curso"><label for="opt_html">Curso de HTML</label>
+            <input type="radio" value="CSS" id="opt_css" name="curso"><label for="opt_css">Curso de CSS</label>
+            <input type="radio" value="JS" id="opt_js" name="curso"><label for="opt_js">Curso de JS</label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </div>
+    </form>
+</body>
+
+</html>

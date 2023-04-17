@@ -1,0 +1,17 @@
+*{
+    /* margin:0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+div {
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+    /* box-sizing: border-box; */
+}
+.mi-parrafo{
+    border: 3px solid red;
+    border-style: dashed;
+    border-bottom: 3px dotted green;
+    margin: 50px 20px 50px 20px;
+}

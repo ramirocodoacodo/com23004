@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#intro {
+    color: white;
+    background-color: violet;
+}
+
+aside, p, div {
+    margin: 20px 0px;
+}
+
+p {
+    color: red;
+}
+.primer-parrafo {
+    color: green;
+    font-size: xx-large;
+    font-weight: normal;
+}
+
+.fondo {
+    background-color: gray;
+}
+
+.fuente {
+    font-size: 150%;
+    color: black;
+}
+
+/* selectores descendientes */
+aside p {
+    color: green;
+    font-weight: bold;
+}
+
+p * strong {
+    color: black;
+}
+
+/* adyacentes */
+div + p {
+    color: brown;
+}

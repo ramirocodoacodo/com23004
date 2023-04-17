@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+    <style>
+        .contenedor {
+            display: grid;
+            gap: 10px;
+            grid-template-rows: 1fr 2fr 2fr 1fr;
+            grid-template-areas:
+                'header header header header'
+                'main   main   main   aside'
+                'main   main   main   aside'
+                'main   main   main   publi'
+                'footer footer footer footer';
+        }
+
+        .item {
+            background-color: gray;
+        }
+
+        .item1 {
+            grid-area: header;
+            background-color: red;
+        }
+
+        .item2 {
+            grid-area: main;
+            background-color: lightblue;
+        }
+
+        .item3 {
+            grid-area: aside;
+            background-color: yellow;
+        }
+
+        .item4 {
+            grid-area: footer;
+            background-color: green;
+        }
+
+        #item5 {
+            grid-area: publi;
+            background-color: gray;
+        }
+
+        .item>div {
+            text-align: center;
+        }
+
+        
+        @media screen and (max-width: 760px) {
+            .contenedor {
+                grid-template-areas:
+                    'header header header header'
+                    'main   main   main   main'
+                    'main   main   main   main'
+                    'aside   aside   aside   publi'
+                    'footer footer footer footer';
+            }
+
+        }
+        
+        @media screen and (max-width: 480px) {
+            .contenedor {
+                grid-template-areas:
+                    'header header header header'
+                    'main   main   main   main'
+                    'main   main   main   main'
+                    'aside   aside   aside   aside'
+                    'footer footer footer footer';
+            }
+            #item5 {
+                display: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="item item1">Encabezado</div>
+        <div class="item item2">Principal</div>
+        <div class="item item3">Aside</div>
+        <div class="item item4">Pie de página</div>
+        <div class="item" id="item5">Publicidad</div>
+    </div>
+</body>
+
+</html>

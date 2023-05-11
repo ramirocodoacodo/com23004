@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 1</title>
+    <script>
+        function cambiarTexto() {
+            // var elem = document.getElementById("div1");
+            var elems = document.getElementsByClassName("ejemplo");
+            elems[0].innerHTML = "Prueba!";
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" class="ejemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti modi aliquam, doloribus saepe omnis consectetur ducimus quibusdam repellendus beatae voluptates minima pariatur incidunt porro magni inventore voluptatem, in aut?</div>
+    <div class="ejemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti modi aliqua</div>
+    <div class="ejemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deleniti modi aliqua</div>
+    <button onclick="cambiarTexto()">Cambiar 1er texto</button>
+
+</body>
+</html>

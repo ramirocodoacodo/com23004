@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Vue 9 - v-for</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="ejemplo-9">
+        <h1>{{titulo}}</h1>
+        <input type="text" v-model="nuevaFruta">
+        <button @click="agregarFruta">Agregar fruta</button>
+        <ul>
+            <li v-for="fru of frutas">
+                {{fru.cantidad}} - {{fru.nombre}}
+                <span v-if="fru.cantidad===0"> - Sin Stock</span>
+                <button @click="fru.cantidad++">+</button>
+                <button @click="fru.cantidad--">-</button>
+            </li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
